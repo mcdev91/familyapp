@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ShoppingList = ({ name }) => {
+const ToDoList = ({ name }) => {
     return (
         <div>
             <div className="ba1 bw1">
-                {`Hello: ${name}, this is what (user) added to shopping list: (content: need some work on this)`}
+                {`Hello: ${name}, this is what (user) added to ToDo list: (content: need some work on this)`}
                 <ol>
                     <li>Content</li>
                     <li>Content</li>
@@ -23,4 +23,4 @@ const ShoppingList = ({ name }) => {
     );
 }
 
-export default ShoppingList;
+export default ToDoList;

@@ -4,6 +4,7 @@ import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import UserInfo from './components/UserInfo/UserInfo';
 import ShoppingList from './components/ShoppingList/ShoppingList';
+import TodoList from './components/ToDoList/ToDoList';
 import './App.css';
 
 const initialState = {
@@ -54,9 +55,23 @@ class App extends Component {
                 name={this.state.user.name}
                 id={this.state.user.id}
               />
-              <ShoppingList
-                name={this.state.user.name}
-              />
+              <div className="mw9 center ph3-ns">
+                <div
+                  className="fl w-10 w-25-ns"
+                />
+                <ShoppingList
+                  name={this.state.user.name}
+                  className="fl w-10 w-25-ns"
+                />
+                <TodoList
+                  name={this.state.user.name}
+                  className="fl w-10 w-25-ns"
+                />
+                <div
+                  className="fl w-10 w-25-ns"
+                />
+              </div>
+
             </div>
             : (
               this.state.route === "signin"
