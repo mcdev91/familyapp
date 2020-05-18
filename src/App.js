@@ -21,7 +21,7 @@ const initialState = {
 class App extends Component {
   constructor() {
     super();
-    this.state = initialState;
+    this.state = initialState
   }
 
   loadUser = (data) => {
@@ -55,20 +55,14 @@ class App extends Component {
                 name={this.state.user.name}
                 id={this.state.user.id}
               />
-              <div className="mw9 center ph3-ns">
-                <div
-                  className="fl w-10 w-25-ns"
+              <div className="cf-ns nl2 nr2">
+                <TodoList
+                  name={this.state.user.name}
+                  className="fl-ns w-25-ns ph2"
                 />
                 <ShoppingList
                   name={this.state.user.name}
-                  className="fl w-10 w-25-ns"
-                />
-                <TodoList
-                  name={this.state.user.name}
-                  className="fl w-10 w-25-ns"
-                />
-                <div
-                  className="fl w-10 w-25-ns"
+                  className="fl-ns w-25-ns ph2"
                 />
               </div>
 
