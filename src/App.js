@@ -31,12 +31,7 @@ class App extends Component {
         name: data.name,
         email: data.email,
         joined: data.joined
-      },
-      //
-      todo: {
-        task: data.task
       }
-      //
     })
   }
 
@@ -59,9 +54,6 @@ class App extends Component {
               <UserInfo
                 name={this.state.user.name}
                 id={this.state.user.id}
-                //
-                todo={this.state.todo.task}
-                //
               />
               <div className="cf-ns nl2 nr2">
                 <TodoList
