@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserInfo = ({ name, id }) => {
+const UserInfo = ({ name, id, task }) => {
     return (
         <div className='flex flex-column'>
             <div className='white f3 fl w-100 pa2'>
@@ -8,6 +8,9 @@ const UserInfo = ({ name, id }) => {
             </div>
             <div className='white f3 fl w-100 pa2'>
                 {`Id: ${id}`}
+            </div>
+            <div className='white f3 fl w-100 pa2'>
+                {`Id: ${task}`}
             </div>
         </div>
     );
