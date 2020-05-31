@@ -53,6 +53,11 @@ class App extends Component {
                 name={this.state.user.name}
                 id={this.state.user.id}
               />
+              <div className="cf-ns nl2 nr2">
+                <InputTodo />
+                <ListTodos />
+              </div>
+
             </div>
             : (
               this.state.route === "signin"
