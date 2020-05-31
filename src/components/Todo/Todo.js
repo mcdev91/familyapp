@@ -6,7 +6,7 @@ function getTodos() {
             return response.text();
         })
         .then(data => {
-            Alert(data);
+            console.log(data);
         });
 }
 
