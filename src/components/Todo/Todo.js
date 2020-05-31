@@ -3,7 +3,7 @@ import React from 'react';
 function getTodos() {
     fetch('https://listsoftodo.herokuapp.com/todos')
         .then(response => {
-            return response.text();
+            return JSON.stringify(response);
         })
         .then(data => {
             console.log(data);
