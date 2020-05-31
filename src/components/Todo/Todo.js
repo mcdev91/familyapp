@@ -4,11 +4,19 @@ function getTodos() {
     fetch('https://listsoftodo.herokuapp.com/todos')
         .then(response => {
             return JSON.stringify(response);
-        })
-        .then(data => {
-            console.log(data);
         });
+    console.log(response);
 }
+
+// function getTodos() {
+//     fetch('https://listsoftodo.herokuapp.com/todos')
+//         .then(response => {
+//             return JSON.stringify(response);
+//         })
+//         .then(data => {
+//             console.log(data);
+//         });
+// }
 
 const Todo = () => {
     return (
