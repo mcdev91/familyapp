@@ -6,7 +6,7 @@ function getTodos() {
             return response.text();
         })
         .then(data => {
-            setMerchants(data);
+            Alert(data);
         });
 }
 
