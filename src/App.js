@@ -3,10 +3,6 @@ import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import UserInfo from './components/UserInfo/UserInfo';
-//todo imports
-import InputTodo from "./components/ToDoList/InputTodo";
-import ListTodos from "./components/ToDoList/ListTodos";
-// import TodoList from './components/ToDoList/ToDoList';
 import './App.css';
 
 const initialState = {
