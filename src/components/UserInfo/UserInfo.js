@@ -1,7 +1,7 @@
 import React from 'react';
 
 function getTodos() {
-    fetch('http://localhost:3001')
+    fetch('https://listsoftodo.herokuapp.com/todos')
         .then(response => {
             return response.text();
         })
