@@ -1,8 +1,19 @@
 import React from 'react';
 
+function getTodos() {
+    fetch('http://localhost:3001')
+        .then(response => {
+            return response.text();
+        })
+        .then(data => {
+            setMerchants(data);
+        });
+}
+
 const UserInfo = ({ name, id }) => {
     return (
         <div className='flex flex-column'>
+            <button onClick={getTodos}>Get</button>
             <div className='white f3 fl w-100 pa2'>
                 {`User: ${name}`}
             </div>
