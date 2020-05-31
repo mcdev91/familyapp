@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 
-function getTodos() {
-    fetch('https://listsoftodo.herokuapp.com/todos')
-        .then(response => {
-            return JSON.stringify(response);
-        });
-    console.log(response);
-}
+const getTodos = async () => {
+    try {
+        const response = await fetch("https://listsoftodo.herokuapp.com/todos");
+        const jsonData = await response.json();
+        console.log(jsonData);
+    } catch (err) {
+        console.error(err.message);
+    }
+};
 
 // function getTodos() {
 //     fetch('https://listsoftodo.herokuapp.com/todos')
