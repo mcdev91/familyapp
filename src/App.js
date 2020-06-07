@@ -3,6 +3,7 @@ import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import UserInfo from './components/UserInfo/UserInfo';
+import ListTodo from './components/ListTodo/ListTodo';
 import './App.css';
 
 const initialState = {
@@ -53,6 +54,7 @@ class App extends Component {
                 name={this.state.user.name}
                 id={this.state.user.id}
               />
+              <ListTodo />
               <div className="cf-ns nl2 nr2">
 
               </div>
