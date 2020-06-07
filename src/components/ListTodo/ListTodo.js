@@ -19,7 +19,7 @@ class ListTodo extends Component {
         return (
             <ul>
                 <div>
-                    {data}
+
                 </div>
             </ul>
         );
