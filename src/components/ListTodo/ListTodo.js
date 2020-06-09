@@ -25,7 +25,7 @@ import React, { Component } from 'react';
 //     }
 // }
 
-componentDidMount() {
+componentDidMount() 
     var that = this;
     var url = 'https://safe-basin-15384.herokuapp.com/todos'
 
@@ -39,7 +39,7 @@ componentDidMount() {
         .then(function (data) {
             that.setState({ todo: data.description });
         });
-}
+
 
 const ListTodo = Object.keys(this.state.description.loc).map((content, idx) => {
     const items = this.state.description.loc[content].map((item, i) => (
