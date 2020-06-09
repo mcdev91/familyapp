@@ -13,7 +13,9 @@ class ListTodo extends Component {
         fetch('https://safe-basin-15384.herokuapp.com/todos')
             .then(response => response.json())
             .then(data => this.setState({ data }));
+        console.log(this.state.data);
     }
+
     render() {
         return (
             <ul>
