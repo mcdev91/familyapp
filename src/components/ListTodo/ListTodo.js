@@ -54,7 +54,7 @@ class ListTodo extends Component {
 
         return (
             <div className="myReportSummary">
-                 Summary of Project name: {projectInfo.name}                    
+                 Summary of Project name: {this.projectInfo.name}                    
                  Number of events: {this.props.data.length}
             </div>
         );
