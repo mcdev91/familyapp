@@ -32,7 +32,7 @@ class ListTodo extends React.Component {
             description.map(todo => {
               const { todo_id, description } = todo;
               return (
-                <div key={}>
+                <div>
                   <p>Name: {todo_id}</p>
                   <p>Email Address: {description}</p>
                   <hr />
