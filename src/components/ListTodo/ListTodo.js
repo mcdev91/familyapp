@@ -33,7 +33,7 @@ class ListTodo extends React.Component {
                         const { todo_id, description } = todo;
                         return (
                             <div>
-                                <p>{todo_id, '.'} {description}</p>
+                                <p>{todo_id, '.',description}</p>
                             </div>
                         );
                     })
