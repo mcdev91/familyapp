@@ -2,48 +2,50 @@ import React, { Component } from 'react';
 
 class ListTodo extends React.Component {
     state = {
-        isLoading: true,
-        description: [],
-        error: null
+      isLoading: true,
+      description: [],
+      error: null
     };
-
+  
     fechtodos() {
-        fetch(`https://safe-basin-15384.herokuapp.com/todos`)
-            .then(response => response.json())
-            .then(data =>
-                this.setState({
-                    description: data,
-                    isLoading: false,
-                })
-            )
-            .catch(error => this.setState({ error, isLoading: false }));
+      fetch(`https://safe-basin-15384.herokuapp.com/todos`)
+        .then(response => response.json())
+        .then(data =>
+          this.setState({
+            description: data,
+            isLoading: false,
+          })
+        )
+        .catch(error => this.setState({ error, isLoading: false }));
     }
-
+  
     componentDidMount() {
-        this.fechtodos();
+      this.fechtodos();
     }
     render() {
-        const { isLoading, description, error } = this.state;
-        return (
-            <div>
-                <h1>ALL LIST</h1>
-                {error ? <p>{error.message}</p> : null}
-                {!isLoading ? (
-                    description.map(todo => {
-                        const { todo_id, description } = todo;
-                        return (
-                            <div>
-                                <p>{todo_id, '.',description}</p>
-                            </div>
-                        );
-                    })
-                ) : (
-                        <h3>Loading...</h3>
-                    )}
-            </div>
-        );
+      const { isLoading, description, error } = this.state;
+      return (
+        <div>
+          <h1>ALL LIST</h1>
+          {error ? <p>{error.message}</p> : null}
+          {!isLoading ? (
+            description.map(todo => {
+              const { todo_id, description } = todo;
+              return (
+                <div>
+                  <p>ID: {todo_id}</p>
+                  <p>{description}</p>
+                  <hr />
+                </div>
+              );
+            })
+          ) : (
+            <h3>Loading...</h3>
+          )}
+          </div>
+      );
     }
-}
+  }
 
 // class ListTodo extends Component {
 //     constructor(props) {
