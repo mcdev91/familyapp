@@ -13,7 +13,7 @@ class AddToList extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        fetch('https://safe-basin-15384.herokuapp.com/register', {
+        fetch('https://safe-basin-15384.herokuapp.com/todos', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
