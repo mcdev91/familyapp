@@ -13,7 +13,7 @@ class AddToList extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        fetch('https://safe-basin-15384.herokuapp.com/post', {
+        fetch('https://safe-basin-15384.herokuapp.com/todos', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -21,12 +21,12 @@ class AddToList extends React.Component {
             })
         })
             .then(response => response.json())
-            // .then(user => {
-            //     if (user.id) {
-            //         this.props.loadUser(user);
-            //         this.props.onRouteChange('home');
-            //     }
-            // })
+        // .then(user => {
+        //     if (user.id) {
+        //         this.props.loadUser(user);
+        //         this.props.onRouteChange('home');
+        //     }
+        // })
     }
 
     render() {
