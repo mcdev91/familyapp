@@ -41,7 +41,7 @@ class AddToList extends React.Component {
                             <input
                                 className="pa2 input-reset ba bg-transparent hover-white w-100 outline-0"
                                 type="text"
-                                name="todo"
+                                name="description"
                                 id="todotask"
                                 onChange={this.onInputChange}
                             />
@@ -61,4 +61,4 @@ class AddToList extends React.Component {
     }
 }
 
-export default Register;
+export default AddToList;
