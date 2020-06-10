@@ -26,15 +26,15 @@ class ListTodo extends React.Component {
       const { isLoading, description, error } = this.state;
       return (
         <div>
-          <h1>Random Todo</h1>
+          <h1>ALL LIST</h1>
           {error ? <p>{error.message}</p> : null}
           {!isLoading ? (
             description.map(todo => {
               const { todo_id, description } = todo;
               return (
                 <div>
-                  <p>Name: {todo_id}</p>
-                  <p>Email Address: {description}</p>
+                  <p>ID: {todo_id}</p>
+                  <p>DESCRIPTION: {description}</p>
                   <hr />
                 </div>
               );
