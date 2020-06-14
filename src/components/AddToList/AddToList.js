@@ -46,6 +46,7 @@ class AddToList extends React.Component {
                                 onChange={this.onInputChange}
                             />
                         </div>
+                        <hr />
                         <div>
                             <input
                                 onClick={this.onSubmitSignIn}
