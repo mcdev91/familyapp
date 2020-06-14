@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
-import Register from './components/Register/Register';
+// import Register from './components/Register/Register';
 import UserInfo from './components/UserInfo/UserInfo';
 import AddToList from './components/AddToList/AddToList';
 import ListTodo from './components/ListTodo/ListTodo';
@@ -68,9 +68,10 @@ class App extends Component {
                   loadUser={this.loadUser}
                   onRouteChange={this.onRouteChange}
                 />
-                : <Register
+                : <SignIn
                   loadUser={this.loadUser}
-                  onRouteChange={this.onRouteChange} />
+                  onRouteChange={this.onRouteChange}
+                />
             )
         }
       </div>
@@ -78,6 +79,8 @@ class App extends Component {
   }
 }
 
-//
+{/* <Register
+  loadUser={this.loadUser}
+  onRouteChange={this.onRouteChange} /> */}
 
 export default App;
