@@ -68,8 +68,7 @@ class App extends Component {
                   loadUser={this.loadUser}
                   onRouteChange={this.onRouteChange}
                 />
-                :
-                <Register
+                : <Register
                   loadUser={this.loadUser}
                   onRouteChange={this.onRouteChange} />
             )
