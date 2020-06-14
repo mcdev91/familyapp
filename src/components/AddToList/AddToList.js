@@ -12,7 +12,7 @@ class AddToList extends React.Component {
         this.setState({ description: event.target.value })
     }
 
-    onSubmitSignIn = () => {
+    onSubmitTask = () => {
         fetch('https://safe-basin-15384.herokuapp.com/todos', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
@@ -39,7 +39,7 @@ class AddToList extends React.Component {
                         <div className="mt3">
                             <label className="db fw6 lh-copy f6" htmlFor="text">TASK</label>
                             <input
-                                className="pa2 input-reset ba bg-transparent hover-white w-100 outline-0"
+                                className="pa2 input-reset ba b--light-gray bg-transparent hover-white w-100 outline-none"
                                 type="text"
                                 name="description"
                                 id="todotask"
@@ -49,8 +49,8 @@ class AddToList extends React.Component {
                         <hr />
                         <div>
                             <input
-                                onClick={this.onSubmitSignIn}
-                                className="white ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib outline-0"
+                                onClick={this.onSubmitTask}
+                                className="white ph3 pv2 input-reset ba b--light-gray bg-transparent grow pointer f6 dib outline-none"
                                 type="submit"
                                 value="addToList"
                             />
