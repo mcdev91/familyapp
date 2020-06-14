@@ -39,18 +39,17 @@ class AddToList extends React.Component {
                         <div className="mt3">
                             <label className="db fw6 lh-copy f6" htmlFor="text">TASK</label>
                             <input
-                                className="pa2 input-reset ba b--light-gray bg-transparent hover-white w-100 outline-none"
+                                className="pa2 input-reset ba b--light-gray bg-transparent hover-white w-100 outline-0"
                                 type="text"
                                 name="description"
                                 id="todotask"
                                 onChange={this.onInputChange}
                             />
                         </div>
-                        <hr />
-                        <div>
+                        <div className="ma2">
                             <input
                                 onClick={this.onSubmitTask}
-                                className="white ph3 pv2 input-reset ba b--light-gray bg-transparent grow pointer f6 dib outline-none"
+                                className="white ph3 pv2 input-reset ba b--light-gray bg-transparent grow pointer f6 dib outline-0"
                                 type="submit"
                                 value="addToList"
                             />
